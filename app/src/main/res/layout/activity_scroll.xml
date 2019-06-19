@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Scroll">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <RelativeLayout
+            android:id="@+id/rlvfood"
+            android:background="#F4FAFD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imgfood"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/food" />
+
+            <TextView
+                android:id="@+id/tvregulation"
+                android:layout_below="@+id/imgfood"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="19dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="#7894BE"
+                android:layout_width="wrap_content"
+                android:text="Regulation"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/tvnafdc"
+                android:layout_below="@+id/tvregulation"
+                android:text="@string/nadfc"
+                android:textSize="25dp"
+                android:textColor="#7894BE"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/sfbold"
+                android:layout_marginLeft="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:id="@+id/imgaccount"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvnafdc"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/iconaccount2" />
+
+            <TextView
+                android:id="@+id/tvauthor"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/sfmedium"
+                android:textColor="#7894BE"
+                android:layout_toRightOf="@+id/imgaccount"
+                android:layout_below="@+id/tvnafdc"
+                android:text="Author"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/imgeye"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="349dp"
+                android:layout_toRightOf="@+id/tvauthor"
+                app:srcCompat="@drawable/ic_eye" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/imgeye"
+                android:text="341"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvauthor"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="17dp"
+                android:text="@string/large_text"
+                android:textSize="19dp" />
+
+
+
+
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                app:itemTextColor="#000"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/navigation" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

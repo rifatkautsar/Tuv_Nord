@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@mipmap/iconhome"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@mipmap/iconinbox"
+        android:title="Inbox" />
+
+    <item
+        android:id="@+id/navigation_shopping"
+        android:icon="@mipmap/iconnotification"
+        android:title="@string/title_notifications"/>
+
+    <item
+        android:id="@+id/navigation_shoppingchart"
+        android:icon="@mipmap/iconshop"
+        android:title="@string/title_shoppingcharts"/>
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@mipmap/iconaccount"
+        android:title="@string/title_account"/>
+
+</menu>

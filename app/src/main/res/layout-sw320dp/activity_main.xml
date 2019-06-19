@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlvcalibration"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+        <ViewFlipper
+            android:id="@+id/v_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+        </ViewFlipper>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_lab">
+
+        <RelativeLayout
+            android:id="@+id/rlvcardview1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:foregroundGravity="left"
+                android:layout_marginRight="-1dp"
+                android:layout_marginTop="1dp"
+                android:layout_alignParentLeft="true"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/cv"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_service"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/iconservice" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_service"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Service"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv2"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:foregroundGravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/cv"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignTop="@+id/cv2"
+                    android:foregroundGravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_service2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/iconcertificatevalidation" />
+
+                    <TextView
+                        android:layout_width="105dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/img_service2"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tvcertificate"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardviewcalibration"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_toRightOf="@+id/cv2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="15dp"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_service1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="17dp"
+                        android:src="@mipmap/calibration" />
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/img_service1"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Calibration"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlvcardview2"
+            android:layout_width="550dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rlvcardview1"
+            android:gravity="center"
+
+            android:layout_marginBottom="10dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="138dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgpickup"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="11dp"
+                        android:src="@mipmap/iconpickup" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgpickup"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="40dp"
+                        android:text="On Site"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardviewtraining"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/cardview1"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgtraining"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/icontraining" />
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/imgtraining"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Training"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/cardviewtraining"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgnews"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/iconnews" />
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/imgnews"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:text="News"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlvcardview3"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlvcardview2"
+            android:foregroundGravity="left"
+            android:layout_marginBottom="10dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardviewother"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="138dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgother"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/iconother" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgother"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="40dp"
+                        android:text="Other"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardviewticket"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/cardviewother"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgticket"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="34dp"
+                        android:layout_marginBottom="-30dp"
+                        android:src="@mipmap/iconticket" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="16dp"
+                        android:layout_below="@+id/imgticket"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="30dp"
+                        android:text="Ticket"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            app:itemTextColor="#000"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/navigation" />
+
+
+    </RelativeLayout>
+
+
+</>

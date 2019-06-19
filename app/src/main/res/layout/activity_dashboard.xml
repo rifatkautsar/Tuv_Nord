@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/bg_lab"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <ImageView
+        android:id="@+id/imglogodashboard"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/tn_logo_white"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:id="@+id/tvtesting"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="170dp"
+        android:textColor="@color/white"
+        android:textSize="27dp"
+        android:text="Testing"
+        android:layout_height="wrap_content" />
+
+
+
+    <View
+        android:layout_width="275dp"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="215dp"
+        android:layout_below="@+id/tvtesting"
+        android:background="#48FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvcalibration"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="230dp"
+        android:textColor="@color/white"
+        android:textSize="27dp"
+        android:text="Calibration"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="275dp"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvcalibration"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="#4FFFFFFF" />
+
+    <TextView
+        android:id="@+id/tvinspection"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="290dp"
+        android:textColor="@color/white"
+        android:textSize="27dp"
+        android:text="Inspection"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:layout_width="275dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvinspection"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="#4FFFFFFF" />
+
+
+    <TextView
+        android:id="@+id/tvcertification"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="350dp"
+        android:textColor="@color/white"
+        android:textSize="27dp"
+        android:text="Cerification"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="275dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvcertification"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="#4FFFFFFF" />
+
+    <TextView
+        android:id="@+id/tvtraining"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="410dp"
+        android:textColor="@color/white"
+        android:textSize="27dp"
+        android:text="Training"
+        android:layout_height="wrap_content" />
+
+
+
+    <View
+        android:layout_width="275dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvtraining"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="#4FFFFFFF" />
+
+    <TextView
+        android:id="@+id/faq"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="470dp"
+        android:textColor="@color/white"
+        android:textSize="27dp"
+        android:text="FAQ"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:layout_width="275dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/faq"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="#4FFFFFFF" />
+
+
+    <TextView
+        android:id="@+id/tvlogout"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="530dp"
+        android:textColor="@color/white"
+        android:textSize="27dp"
+        android:text="Log Out"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="275dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvlogout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#4FFFFFFF" />
+
+
+
+</RelativeLayout>

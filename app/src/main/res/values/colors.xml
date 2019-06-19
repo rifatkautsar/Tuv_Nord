@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2957a4</color>
+    <color name="colorbuttonlogin">#0691CE</color>
+    <color name="colorbuttonregis">#4CD964</color>
+    <color name="colortvregistration">#97999D</color>
+    <color name="colorcardview">#0691CE</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#6ba3ff</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+</resources>

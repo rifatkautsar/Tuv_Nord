@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rlvcalibration"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+        <android.support.v7.widget.SearchView
+            android:layout_width="200dp"
+            android:background="@color/colorcardview"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.SearchView>
+
+
+        <ViewFlipper
+            android:id="@+id/v_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+        </ViewFlipper>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/bg_lab">
+
+        <RelativeLayout
+            android:id="@+id/rlvcardview1"
+            android:layout_width="550dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_service"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/service2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_service"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Service"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/cv"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_service2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/iconcertificatevalidation" />
+
+                    <TextView
+                        android:layout_width="105dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/img_service2"
+                        android:layout_centerInParent="true"
+                        android:text="@string/tvservice2"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/cv2"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_service1"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+
+                        android:src="@mipmap/iconcertificatevalidation" />
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/img_service1"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/tvcertificate"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlvcardview2"
+            android:layout_width="550dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlvcardview1"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="138dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgpickup"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="11dp"
+                        android:src="@mipmap/iconproduct" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgpickup"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="40dp"
+                        android:text="@string/tvproductreg"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardviewtraining"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/cardview1"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgtraining"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/iconpickup" />
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/imgtraining"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/tvpickupsampling"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/cardviewtraining"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgnews"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="33dp"
+                        android:src="@mipmap/icontraining" />
+
+                    <TextView
+                        android:layout_width="112dp"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/imgnews"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:text="Training"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlvcardview3"
+            android:layout_width="550dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlvcardview2"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardviewother"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="138dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgother"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:src="@mipmap/iconnews" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgother"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="40dp"
+                        android:text="News"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardviewticket"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/cardviewother"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgticket2"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="34dp"
+                        android:layout_marginBottom="-30dp"
+                        android:src="@mipmap/iconother" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="16dp"
+                        android:layout_below="@+id/imgticket2"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="30dp"
+                        android:text="Other"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardviewticket2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/cardviewticket"
+                app:cardBackgroundColor="@color/colorcardview"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imgticket"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="34dp"
+                        android:layout_marginBottom="-30dp"
+                        android:src="@mipmap/iconticket" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="16dp"
+                        android:layout_below="@+id/imgticket"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="32dp"
+                        android:layout_marginBottom="30dp"
+                        android:text="Ticket"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            app:itemTextColor="#000"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/navigation" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
